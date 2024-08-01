@@ -175,8 +175,8 @@
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Add icons to the links using the .nav-icon class
                  with font-awesome or any other icon font library -->
-            <li class="nav-item has-treeview">
-              <a href="#" class="nav-link">
+            <li class="nav-item has-treeview" id="invitationDonorPage" >
+              <a href="#" class="nav-link" >
                 <i class="nav-icon fa fa-dashboard"></i>
                 <p>
                   داشبوردها
@@ -505,16 +505,17 @@
             <div class="card-header">
               <h3 class="card-title">افزودن فایل اهدا / اهدا کننده</h3>
             </div>
-            <div class="card-body">
-              <form action=">
+            <div class="card-body" id="app">
+              <form>
                 <div class="form-group">
                 <div class="mb-3">
                     <label class="mt-2 mb-4" for="fileUpload">بارگذاری فایل اهدا / اهداکننده</label>
                     <div class="form-row text-center">
-                    <select class="form-select mx-4"  id="fileTypeSelect" name="fileTypeSelect" required>
+                    <select class="form-select mx-4 px-3"  id="fileTypeSelect" name="fileTypeSelect" required>
                               <option disabled selected>انتخاب کنید</option>
                               <option value="donation">اهدا</option>
                               <option value="donor">اهداکننده</option>
+                              <option value="invitation">فراخوان</option>
                             </select>
                     <input class="form-control-file col-3" type="file" name="fileInput" id="fileInput" />
                             
@@ -570,8 +571,10 @@
 <!-- AdminLTE for demo purposes -->
 <script src="./dist/js/demo.js"></script>
 <script src="./read-excel-file.min.js"></script>
-<!-- page script -->
+<!-- Vue Js script -->
+<script src="./dist/js/vue.global.js"></script>
+<!-- Add Main Js File -->
  <script src="./mweb.js" ></script>
- <script src="./renderer.js"></script>
+ 
 </body>
 </html>
